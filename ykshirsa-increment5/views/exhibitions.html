@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse exhibitions page">
+    <title>Exhibitions | MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+
+    <nav class="nav_bar" id="myNav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h1>Exhibitions</h1>
+
+        <h3>Digital Dreams</h3>
+        <p>
+            Digital Dreams explores how artists are using emerging technologies such as
+            artificial intelligence, virtual reality, and generative algorithms to create
+            immersive artistic experiences. Visitors can interact with installations that
+            respond to movement, sound, and human emotion, transforming traditional
+            gallery spaces into dynamic environments.
+        </p>
+
+        <h3>Code & Canvas</h3>
+        <p>
+            Code & Canvas highlights the intersection of programming and visual art.
+            This exhibition features works from contemporary artists who use code as
+            a creative medium to generate patterns, animations, and evolving digital
+            landscapes. The exhibition invites visitors to see programming not just as
+            a technical skill, but as a powerful tool for artistic expression.
+        </p>
+    </main>
+
+    <figure class="main_img">
+        <img src="../static/painting2.png" alt="Digital art exhibition at MonoMuse" width="100%">
+    </figure>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
