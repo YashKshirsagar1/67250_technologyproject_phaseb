@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse donation page">
+    <title>Donate | MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+    </header>
+
+    <nav class="nav_bar" id="myNav">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="donate.html">Donate</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+
+    <main class="main">
+        <h1>Support MonoMuse</h1>
+
+        <p>
+            Your donation helps MonoMuse preserve and celebrate Asian art through exhibitions,
+            educational programs, cultural events, and community workshops. Every contribution
+            supports our mission to make art, history, and heritage accessible to all visitors.
+        </p>
+
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="amount">Donation Amount ($):</label><br>
+            <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+            <label for="donationType">Donation Type:</label><br>
+            <select id="donationType" name="donationType" required>
+                <option value="">Select a donation type</option>
+                <option value="One-Time">One-Time</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Annual">Annual</option>
+            </select><br><br>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </main>
+
+    <figure class="main_img">
+        <img src="../static/painting3.png" alt="Visitors viewing art at MonoMuse" width="100%">
+        <a class="cta" href="views/tickets.html">Buy Tickets</a>
+    </figure>
+
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
